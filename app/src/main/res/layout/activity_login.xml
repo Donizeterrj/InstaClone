@@ -28,22 +28,38 @@
                 android:contentDescription="@null"
                 android:src="@drawable/instagram_logo_black" />
 
-            <EditText
-                android:id="@+id/login_edit_email"
-                style="@style/Theme.InstaClone.FormEditText"
-                android:autofillHints="@null"
-                android:hint="@string/email"
-                android:inputType="textEmailAddress" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_edit_email_input"
+                style="@style/Theme.InstaClone.FormEditTextInput"
+                app:hintEnabled="false">
 
-            <EditText
-                android:id="@+id/login_edit_password"
-                style="@style/Theme.InstaClone.FormEditText"
-                android:autofillHints="@null"
-                android:hint="@string/password"
-                android:inputType="textPassword" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/login_edit_email"
+                    style="@style/Theme.InstaClone.FormEditText"
+                    android:autofillHints="@null"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_edit_password_input"
+                style="@style/Theme.InstaClone.FormEditTextInput"
+                app:hintEnabled="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/login_edit_password"
+                    style="@style/Theme.InstaClone.FormEditText"
+                    android:autofillHints="@null"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
 
             <Button
                 android:id="@+id/login_btn_enter"
+                android:enabled="false"
                 style="@style/Theme.InstaClone.Button"
                 android:text="@string/enter" />
 
@@ -61,7 +77,7 @@
                 <TextView
                     style="@style/Theme.InstaClone.TextViewBase"
                     android:layout_gravity="center"
-                    android:background="@color/gray"
+                    android:background="@color/white"
                     android:padding="8dp"
                     android:text="@string/or" />
 

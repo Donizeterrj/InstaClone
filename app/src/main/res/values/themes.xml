@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.InstaClone" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Primary color. -->
-         <item name="colorPrimary">@color/gray</item>
+         <item name="colorPrimary">@color/black</item>
          <item name="colorPrimaryVariant">@color/gray_darker</item>
 
         <!-- Secondary color  -->
